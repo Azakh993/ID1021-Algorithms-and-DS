@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ArraysAndOperations/ArraysAndOperations.iml" filepath="$PROJECT_DIR$/ArraysAndOperations/ArraysAndOperations.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Calculator/Calculator.iml" filepath="$PROJECT_DIR$/Calculator/Calculator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/ID1021.iml" filepath="$PROJECT_DIR$/.idea/ID1021.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SearchingInSortedArrays/SearchingInSortedArrays.iml" filepath="$PROJECT_DIR$/SearchingInSortedArrays/SearchingInSortedArrays.iml" />
+    </modules>
+  </component>
+</project>
