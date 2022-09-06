@@ -2,13 +2,13 @@ package se.kth.id1021.arraysearching;
 
 import java.util.Random;
 
-class Arrays {
+class ArrayAlgorithms {
     static int[] unsortedArray(int arraySize) {
         Random rnd = new Random();
         int[] unsortedArray = new int[arraySize];
 
         for ( int i = 0; i < arraySize; i++ ) {
-            unsortedArray[ i ] = rnd.nextInt( arraySize * 10 );
+            unsortedArray[ i ] = rnd.nextInt( arraySize );
         }
 
         return unsortedArray;
