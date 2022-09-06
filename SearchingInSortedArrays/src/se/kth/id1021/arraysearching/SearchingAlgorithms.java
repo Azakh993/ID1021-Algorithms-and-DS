@@ -3,8 +3,8 @@ package se.kth.id1021.arraysearching;
 public class SearchingAlgorithms {
 
     static boolean search_unsorted(int[] array, int key) {
-        for (int index = 0; index < array.length ; index++) {
-            if (array[index] == key) {
+        for (int i : array) {
+            if (i == key) {
                 return true;
             }
         }
