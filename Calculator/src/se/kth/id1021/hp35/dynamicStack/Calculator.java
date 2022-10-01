@@ -7,7 +7,7 @@ public class Calculator {
 	int instructionPointer = 0;
 	Stack stack;
 
-	public Calculator(  ) {
+	public Calculator() {
 		this.stack = new Stack();
 	}
 

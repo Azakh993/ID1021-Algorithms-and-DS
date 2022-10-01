@@ -3,9 +3,13 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ArraysAndOperations/ArraysAndOperations.iml" filepath="$PROJECT_DIR$/ArraysAndOperations/ArraysAndOperations.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BinaryTrees/BinaryTrees.iml" filepath="$PROJECT_DIR$/BinaryTrees/BinaryTrees.iml" />
       <module fileurl="file://$PROJECT_DIR$/Calculator/Calculator.iml" filepath="$PROJECT_DIR$/Calculator/Calculator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DoublyLinkedLists/DoublyLinkedLists.iml" filepath="$PROJECT_DIR$/DoublyLinkedLists/DoublyLinkedLists.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/ID1021.iml" filepath="$PROJECT_DIR$/.idea/ID1021.iml" />
       <module fileurl="file://$PROJECT_DIR$/SearchingInSortedArrays/SearchingInSortedArrays.iml" filepath="$PROJECT_DIR$/SearchingInSortedArrays/SearchingInSortedArrays.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SinglyLinkedLists/SinglyLinkedLists.iml" filepath="$PROJECT_DIR$/SinglyLinkedLists/SinglyLinkedLists.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SortingArrays/SortingArrays.iml" filepath="$PROJECT_DIR$/SortingArrays/SortingArrays.iml" />
     </modules>
   </component>
 </project>
