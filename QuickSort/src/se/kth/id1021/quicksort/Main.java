@@ -1,19 +1,33 @@
 package se.kth.id1021.quicksort;
 
+import java.util.Arrays;
+
 public class Main {
 	public static void main( String[] args ) {
+		/*
 		System.out.printf( "\n%8s%10s%10s\n", "n", "sll", "dll" );
 
-		int passes = 500;
-		int[] sizes = new int[30];
+		int passes = 1000;
+		int[] sizes = new int[10];
 		sizes[0] = 50;
-		for ( int i = 1; i < 20; i++ ) {
+		for ( int i = 1; i < 10; i++ ) {
 			sizes[i] = 2 * sizes[i - 1];
 		}
 
 		Benchmark.Benchmarks( sizes, passes );
+		System.out.println();
+		Benchmark.Benchmarks( sizes, passes );
+		System.out.println();
+		Benchmark.Benchmarks( sizes, passes );
+		System.out.println();
+		Benchmark.Benchmarks( sizes, passes );
+		System.out.println();
+		Benchmark.Benchmarks( sizes, passes );
+		System.out.println();
 
-		 /*
+
+		*/
+
 
 		SLL sll = new SLL();
 		sll.push(new SLL.Node(26));
@@ -39,6 +53,5 @@ public class Main {
         System.out.print("\nAfter sorting: ");
         sll.printList(sll.head);
 
-		 */
 	}
 }

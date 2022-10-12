@@ -5,7 +5,7 @@ class Array_QS {
 	public static void sort(int[] arrayToSort, int left, int right) {
 		if (left < right) {
 			int partitionIndex = partition(arrayToSort, left, right);
-			sort(arrayToSort, left, partitionIndex-1);
+			sort(arrayToSort, left, partitionIndex -1);
 			sort(arrayToSort, partitionIndex+1, right);
 		}
 	}

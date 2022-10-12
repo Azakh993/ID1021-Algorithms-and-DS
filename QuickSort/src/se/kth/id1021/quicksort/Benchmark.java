@@ -4,6 +4,9 @@ import java.util.Random;
 
 public class Benchmark {
 	static void Benchmarks( int[] sizes, int passes ) {
+		double sll_prev_time = 0;
+		double array_prev_time = 0;
+
 		for ( int size: sizes ) {
 			SLL sll = new SLL();
 			int[] array = new int[ size ];
@@ -21,7 +24,7 @@ public class Benchmark {
 				double runTime = endTime - startTime;
 				if(runTime < ssl_averageTime)
 					ssl_averageTime = runTime;
-				sll.head.next = sll.tail = null;
+
 
 				startTime = System.nanoTime();
 				Array_QS.sort( array, 0, array.length - 1 );
@@ -29,7 +32,19 @@ public class Benchmark {
 				runTime = endTime - startTime;
 				if(runTime < ssl_averageTime)
 					array_averageTime = runTime;
+
+				if(sll_prev_time != 0
+				   && (sll_prev_time * 5) > ssl_averageTime
+				   && (array_prev_time * 5) > array_averageTime) {
+					break;
+				}
+
+				if (i+2 == passes && sll_prev_time != 0)
+					i = 0;
 			}
+
+			sll_prev_time = ssl_averageTime;
+			array_prev_time = array_averageTime;
 
 			System.out.printf( "%10.0f", ( ssl_averageTime ) );
 			System.out.printf( "%10.0f\n", ( array_averageTime ) );
@@ -37,6 +52,7 @@ public class Benchmark {
 	}
 
 	static void preparator( int size, SLL sll, int[] unsorted_array ) {
+		sll.head.next = sll.tail = null;
 		for ( int i = 0; i < size; i++ ) {
 			Random rnd = new Random();
 			int rnd_int = rnd.nextInt(size*size);
