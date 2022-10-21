@@ -1,8 +1,9 @@
-package se.kth.id1021.queues;
+package se.kth.id1021.heaps.binarytree;
 
 import java.util.Iterator;
 
 public class TreeIterator implements Iterator< Integer > {
+	// private final LLQueue< Node > queue = new LLQueue<>();
 	private final ArrQueue queue = new ArrQueue();
 
 	public TreeIterator( Node root ) {
@@ -21,6 +22,6 @@ public class TreeIterator implements Iterator< Integer > {
 		if ( elementToOutput.right != null ) {
 			queue.add( elementToOutput.right );
 		}
-		return elementToOutput.value;
+		return elementToOutput.priority;
 	}
 }

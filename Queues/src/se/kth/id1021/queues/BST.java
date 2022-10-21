@@ -19,12 +19,13 @@ class BST implements Iterable< Integer > {
 	}
 
 	private Node insert( Node root, Integer key, Integer value ) {
-		if ( root == null || Objects.equals( root.key, key ) )
+		if ( root == null || Objects.equals( root.key, key ) ) {
 			root = new Node( key, value );
-		else if ( key > root.key )
+		} else if ( key > root.key ) {
 			root.right = insert( root.right, key, value );
-		else
+		} else {
 			root.left = insert( root.left, key, value );
+		}
 		return root;
 	}
 

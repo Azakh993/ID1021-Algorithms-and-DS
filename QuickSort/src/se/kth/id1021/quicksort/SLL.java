@@ -4,26 +4,11 @@ class SLL {
 	Node head = new Node();
 	Node tail;
 
-	static class Node {
-		int data;
-		Node next;
-
-		Node( int data ) {
-			this.data = data;
-			this.next = null;
-		}
-
-		Node( ) {
-			this.next = null;
-		}
-	}
-
 	void push( Node newNode ) {
 
-		if (head.next == null)
+		if ( head.next == null ) {
 			tail = head.next = newNode;
-
-		else {
+		} else {
 			newNode.next = head.next;
 			head.next = newNode;
 		}
@@ -40,9 +25,8 @@ class SLL {
 		return nodeToPop;
 	}
 
-
-	void append(Node nodeToAppend) {
-		if(tail == null) {
+	void append( Node nodeToAppend ) {
+		if ( tail == null ) {
 			tail = head.next = nodeToAppend;
 		} else {
 			tail.next = nodeToAppend;
@@ -50,15 +34,28 @@ class SLL {
 		}
 	}
 
-	void printList(Node head)
-	{
+	void printList( Node head ) {
 		head = head.next;
 		System.out.println( "" );
-		while (head != null) {
-			System.out.print(head.data);
-			System.out.print(" ");
+		while ( head != null ) {
+			System.out.print( head.data );
+			System.out.print( " " );
 			head = head.next;
 		}
 		System.out.println( "" );
+	}
+
+	static class Node {
+		int data;
+		Node next;
+
+		Node( int data ) {
+			this.data = data;
+			this.next = null;
+		}
+
+		Node() {
+			this.next = null;
+		}
 	}
 }

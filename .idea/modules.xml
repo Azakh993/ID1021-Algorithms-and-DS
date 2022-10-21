@@ -6,6 +6,9 @@
       <module fileurl="file://$PROJECT_DIR$/BinaryTrees/BinaryTrees.iml" filepath="$PROJECT_DIR$/BinaryTrees/BinaryTrees.iml" />
       <module fileurl="file://$PROJECT_DIR$/Calculator/Calculator.iml" filepath="$PROJECT_DIR$/Calculator/Calculator.iml" />
       <module fileurl="file://$PROJECT_DIR$/DoublyLinkedLists/DoublyLinkedLists.iml" filepath="$PROJECT_DIR$/DoublyLinkedLists/DoublyLinkedLists.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Graphs/Graphs.iml" filepath="$PROJECT_DIR$/Graphs/Graphs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HashTables/HashTables.iml" filepath="$PROJECT_DIR$/HashTables/HashTables.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Heaps/Heaps.iml" filepath="$PROJECT_DIR$/Heaps/Heaps.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/ID1021.iml" filepath="$PROJECT_DIR$/.idea/ID1021.iml" />
       <module fileurl="file://$PROJECT_DIR$/Queues/Queues.iml" filepath="$PROJECT_DIR$/Queues/Queues.iml" />
       <module fileurl="file://$PROJECT_DIR$/QuickSort/QuickSort.iml" filepath="$PROJECT_DIR$/QuickSort/QuickSort.iml" />

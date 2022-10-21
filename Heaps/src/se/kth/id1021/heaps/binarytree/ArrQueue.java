@@ -1,4 +1,4 @@
-package se.kth.id1021.queues;
+package se.kth.id1021.heaps.binarytree;
 
 class ArrQueue {
 	private Node[] queueArray;

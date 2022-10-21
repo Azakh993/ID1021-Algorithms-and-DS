@@ -10,27 +10,29 @@ class LLQueue< T > {
 	}
 
 	void add( T newQueueElement ) {
-		Node newNode = new Node(newQueueElement);
-		if (isEmpty())
-			front = rear =  newNode;
-		else {
+		Node newNode = new Node( newQueueElement );
+		if ( isEmpty() ) {
+			front = rear = newNode;
+		} else {
 			rear.next = newNode;
 			rear = newNode;
 		}
 	}
 
-	T remove() {
-		if  ( isEmpty() )
-			return null;
-		Node nodeToRemove = front;
-		front = front.next;
-		if(front == null)
-			rear = null;
-		return nodeToRemove.element;
-	}
-
 	boolean isEmpty() {
 		return front == null;
+	}
+
+	T remove() {
+		if ( isEmpty() ) {
+			return null;
+		}
+		Node nodeToRemove = front;
+		front = front.next;
+		if ( front == null ) {
+			rear = null;
+		}
+		return nodeToRemove.element;
 	}
 
 	private class Node {

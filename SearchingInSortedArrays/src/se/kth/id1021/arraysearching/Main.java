@@ -37,7 +37,7 @@ public class Main {
 			}
 
 			System.out.printf( "%8.0f", ( min / loop ) );
-			
+
 
 			min = Double.POSITIVE_INFINITY;
 
