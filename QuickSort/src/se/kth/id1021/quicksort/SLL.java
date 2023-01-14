@@ -5,6 +5,7 @@ class SLL {
 	Node tail;
 
 	void push( Node newNode ) {
+		newNode.next = null;
 
 		if ( head.next == null ) {
 			tail = head.next = newNode;

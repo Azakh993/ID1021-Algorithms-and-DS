@@ -26,30 +26,25 @@ class SLL_QS {
 		SLL.Node previous = start.next;
 		SLL.Node previous_pivot;
 		SLL smaller_sublist = new SLL();
-		SLL larger_sublist = new SLL();
 
 
 		while ( current != null ) {
 			if ( current.data < pivot.data ) {
 				previous.next = current.next;
-				current.next = null;
 				smaller_sublist.push( current );
+				current = previous.next;
 			} else {
-				previous.next = current.next;
-				current.next = null;
-				larger_sublist.push( current );
+				previous = previous.next;
+				current = current.next;
 			}
-			current = previous.next;
 		}
 
 		if ( smaller_sublist.tail != null ) {
 			previous_pivot = smaller_sublist.tail;
 			start.next = smaller_sublist.pop();
 			smaller_sublist.append( pivot );
-			smaller_sublist.append( larger_sublist.pop() );
 		} else {
 			previous_pivot = start;
-			pivot.next = larger_sublist.pop();
 		}
 
 		return previous_pivot;
