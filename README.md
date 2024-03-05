@@ -1,4 +1,5 @@
 # Course contents
+This repository documents the produced code in the Algorithms and Data Structures (ID1021) course offered by KTH, covering basic algorithm analysis, fundamental algorithms, data structures, and program design.
 
 ## Basic algorithm analysis:
 
